@@ -7,3 +7,36 @@ Create sheet2 with a column_Y having 10 values
 Add values of  column_X and  column_Y (adjacently)
 Create sheet3 having column_Z with added values
 -----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Basic sample
+
+from openpyxl import Workbook
+import time
+
+
+# creating workbook ,getting handler
+book_handler1 = Workbook()
+book_handler2 = Workbook()
+
+
+# create sheet in a workbook
+
+sheet1 = book_handler1.active
+sheet2 = book_handler2.active
+
+# setting value in sheet cell
+
+sheet1['A1'] = 20
+sheet2['A1'] = 21
+
+
+
+# feeting and printing value of cell
+
+print(sheet1['A1'].value)
+print(sheet2['A1'].value)
+
+book_handler1.save("sample1.xlsx")
+book_handler2.save("sample2.xlsx")
+------------------------------------------------------------------------------
