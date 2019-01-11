@@ -1,0 +1,8 @@
+
+# My Blog page https://haider4good.blogspot.com/p/zip-file-handling-using-python.html
+for file in list_files:
+    if file.lower().endswith(".zip") and zipfile.is_zipfile(file):
+        print(" Name:",file)
+# issue :-  suppose a image file is renamed with extension with .zip then this program will fail 
+#           but if i use zipfile.is_zipfile(file) is_zipfile method then it can detect its fake or not 
+#           another issue is that it return true for file xlsx , docx etc...
