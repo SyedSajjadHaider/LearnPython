@@ -1,53 +1,8 @@
-<div dir="ltr" style="text-align: left;" trbidi="on">
-reading excel sheet<br />
-<div>
-writing to excel sheet</div>
-<div>
-import interesting methods<br />
-<br />
-----------------------------------------------------------------------------------------------------------------<br />
-<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">from <b>module</b> import&nbsp;<b>class</b></span><br />
-<br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">from&nbsp;openpyxl&nbsp;import Workbook</span><br />
-<br />
-<b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Create Workbook</span></b><br />
-<b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span></b> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"># Creating a Workbook, getting handler</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; book_handler = Workbook()</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span> <b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Create an Excel Sheet in Workbook</span></b><br />
-<b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span></b> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"># Create Sheet in a Workbook</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; sheet = book_handler.active</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span> <b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Write Some Data to cell&nbsp; A1 and A2</span></b><br />
-<b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span></b> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"># Setting Value in sheet cell</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; sheet['A1'] = 56</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; sheet['A2'] = 43</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span> <b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Print value of cell A1 and A2</span></b><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"># Fetching and&nbsp; Printing Value of Cell</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; print(sheet['A1'].value)</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; print(sheet['A2'].value)</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span> <b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Close Workbook</span></b><br />
-<b><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span></b> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"># Saving Workbook</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; book_handler.save("sample.xlsx")</span><br />
-<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span> <br />
-<div style="text-align: left;">
-<a href="https://2.bp.blogspot.com/-tU5xZ1M6T84/XAKvmnJAUII/AAAAAAAAYBk/Y06q_UXPscwdAE7WAFll9JTs-00L7N_EACLcBGAs/s1600/idle.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" data-original-height="572" data-original-width="683" height="532" src="https://2.bp.blogspot.com/-tU5xZ1M6T84/XAKvmnJAUII/AAAAAAAAYBk/Y06q_UXPscwdAE7WAFll9JTs-00L7N_EACLcBGAs/s640/idle.PNG" width="640" /></a></div>
-</div>
-<div>
-<br />
-<br />
---------------------------------------------------------------------------------------------------------------------------<br />
-<b>Creating Two Sheet and Writing to A1 cell of sheet1 and A1 cell of sheet2</b><br />
-<br />
-<div class="separator" style="clear: both; text-align: left;">
-<a href="https://4.bp.blogspot.com/-9N20ViYDb1o/XAK6VaEgPvI/AAAAAAAAYBw/UmSUtCnRMhk1WcYLerGpSreyM6SYCPDBwCLcBGAs/s1600/Capture.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="564" data-original-width="678" height="532" src="https://4.bp.blogspot.com/-9N20ViYDb1o/XAK6VaEgPvI/AAAAAAAAYBw/UmSUtCnRMhk1WcYLerGpSreyM6SYCPDBwCLcBGAs/s640/Capture.PNG" width="640" /></a></div>
-<br />
-<br />
-------------------------------------------------------------------------------------------<br />
-Problem statement:-<br />
-<br />
-Create&nbsp; sheet1 with a column_X having 10 values<br />
-Create sheet2 with a column_Y having 10 values<br />
-Add values of&nbsp; column_X and&nbsp; column_Y (adjacently)<br />
-Create sheet3 having column_Z with added values<br />
------------------------------------------------------------------------------------------<br />
-<br /></div>
-</div>
+------------------------------------------------------------------------------------------
+Problem statement:-
+
+Create  sheet1 with a column_X having 10 values
+Create sheet2 with a column_Y having 10 values
+Add values of  column_X and  column_Y (adjacently)
+Create sheet3 having column_Z with added values
+-----------------------------------------------------------------------------------------
