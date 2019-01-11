@@ -1,12 +1,4 @@
 My Basic understanding of handling excel using python is mentioned here  https://haider4good.blogspot.com/p/excel-handling-openpyxl.html
-------------------------------------------------------------------------------------------
-Mini Project statement:-
-
-Create  sheet1 with a column_X having 10 values
-Create sheet2 with a column_Y having 10 values
-Add values of  column_X and  column_Y (adjacently)
-Create sheet3 having column_Z with added values
------------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------------
 Basic sample
@@ -40,3 +32,5 @@ print(sheet2['A1'].value)
 book_handler1.save("sample1.xlsx")
 book_handler2.save("sample2.xlsx")
 ------------------------------------------------------------------------------
+
+# Will create more mini project/samples for openpyxl 
