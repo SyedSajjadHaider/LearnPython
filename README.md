@@ -1,3 +1,6 @@
+my blog dedicate to technology
+https://haider4good.blogspot.com/
+
 # LearnPython
 will share sample and knowledge of python
 
